@@ -9,6 +9,6 @@ do
                 sudo networksetup -setnetworkserviceenabled Wi-Fi off && sudo networksetup -setnetworkserviceenabled Wi-Fi on
                 openssl rand -hex 6 | sed 's/\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)/\1:\2:\3:\4:\5:\6/' |  xargs  sudo  ifconfig  en0  ether
                 networksetup -detectnewhardware
-                sleep 20
+                sleep 15
         fi
 done
